@@ -10,6 +10,7 @@ public class Raycast : MonoBehaviour
     // The force with which the target is "poked" when hit.
     float pokeForce;
 
+    //Cuando apuntas al objeto.
     public void Start()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -18,7 +19,8 @@ public class Raycast : MonoBehaviour
         }
     }
 
-    void Update()
+    //Cuando clicas el objeto quitas puntos.
+    public void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
